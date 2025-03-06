@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-image: url('https://wallpapers.com/images/hd/aesthetic-computer-4k-c9qdhe02pr84wh3a.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+    width: 100%;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-size: 24px;
+    text-decoration: underline;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+label {
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, .textarea {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+    font-size: 14px;
+}
+
+.textarea {
+    height: 80px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #122e1a;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.button:hover {
+    background-color: #11db4e;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+footer h3{
+    color: #ccc;
+    margin: 5px;
+    font-size: 18px;
+    
+}
+footer h5 {
+    color: #ccc;
+    margin: 5px;
+    font-size: 12px;
+    font-style: italic;
+}
