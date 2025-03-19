@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-color: rgba(58, 40, 29, 0.521);
+    color: rgb(255, 255, 255);
+}
+
+#flexbox1{
+    background-color: rgba(58, 40, 29, 0.521);
+    padding: 15px;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#flexbox2{
+    background-color: rgba(32, 22, 16, 0.521);
+    padding: 15px;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.bloco1{
+    background-color: rgb(134, 34, 34);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    border-color: aliceblue;
+    border-radius: 15px;
+}
+.bloco2{
+    background-color: rgb(46, 93, 107);
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    border-color: aliceblue;
+    border-radius: 15px;
+}
+.bloco3{
+    background-color: rgba(136, 255, 0, 0.342);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    border-color: aliceblue;
+    border-radius: 15px;
+}
