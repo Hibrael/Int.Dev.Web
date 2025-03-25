@@ -1,8 +1,12 @@
+html{
+  background-color: #20010150;
+}
 body {
     font-family: Arial, sans-serif;
     color: #fff;
     margin: 0;
     padding: 0;
+  
     
     background: url(../Atividade05/img/DuckBackground.jpg) no-repeat center center fixed;
     width: 100%;
@@ -57,12 +61,17 @@ body {
     font-size: 3rem;
     color: #fff;
   }
+  p{
+    background-color: rgba(158, 84, 14, 0.705);
+    border-radius: 10px;
+    
+  }
   .content h1 span {
-    color: #ff7b54;
+    color: #dd927b;
   }
   .content p {
     font-size: 1rem;
-    color: #a8a8a8;
+    color: #cfcdcd;
     line-height: 1.5;
     margin-top: 20px;
   }
