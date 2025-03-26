@@ -6,10 +6,43 @@
     <title>Hibra-Int.JavaScript</title>
 </head>
 <body>
-    
+    <h1>Hello JavaScript</h1>
     <script>
-        let alvaro;
-        let nome
+        // Criar variavel sem valor 
+        let nome;
+        let idade; 
+        
+        //Criar variavel e inicializar ela 
+        const pi = 13.1415;
+        let numero = 18;
+
+        //alert("Hello People");
+        //confirm("Está gostando do JavaScript?");
+        // nome = prompt("Whats your name?");
+        // idade = prompt("How old are you?");
+        // document.write("Olá, " + nome + " sua idade é: " + idade + " anos <br>");
+        // document.write(`Olá ${nome} sua idade é ${idade} <br>`);
+
+        // let nr1 =Number.parseFloat(prompt("Informe o primeiro número: "));
+        // let nr2 =Number.parseFloat(prompt("Informe o segundo número: "));
+
+        // let soma
+        // soma = nr1 + nr2;
+
+        // document.write(`A soma ${nr1} + ${nr2} resulta em: ${soma}`);
+
+        //exercicio01 pega tres nota e faz media 
+        let nt1, nt2, nt3, media;
+
+        nt1 = Number.parseFloat(prompt("Informe a sua primeira nota: "));
+        nt2 = Number.parseFloat(prompt("Informe a sua segunda nota: "));
+        nt3 = Number.parseFloat(prompt("Informe a sua terceira nota: "));
+        alert("Caso as respostas acima não estejam em nosso sistema, sendo caracterizadas como fraudulentas, você será automaticamente reprovado");
+
+        media = (nt1 + nt2 + nt3) / 3; 
+        document.write(`Sua media final é: ${media}`);
+        alert("Sei lá se vc ta passado ou não.");
+
     </script>
 
 </body>
