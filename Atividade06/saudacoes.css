@@ -1,0 +1,28 @@
+body{
+    font-family: 'minecraft';
+    background: linear-gradient(to bottom, rgb(95, 159, 53) 20%, rgb(139, 90, 43) 40%, rgb(89, 60, 31) 100%);
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    justify-content: space-between;
+
+}
+@font-face {
+    font-family: 'minecraft';
+    src: url(font/Minecraft.ttf);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
+h1:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+h1:click{
+    color: green;
+    
+}

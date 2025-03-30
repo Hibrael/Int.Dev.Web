@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="saudacoes.css">
+    <title>Saudações usuário</title>
+</head>
+<body>
+    <audio id="som" src=".\font\minecraft_click.mp3"></audio>
+    <nav>
+        <h1 id="titulo">==========Bem Vindo!==========</h1>
+    </nav>
+    
+
+    <script>
+        let nome;
+        nome = prompt("Por gentileza, informe seu nome: ");
+        document.write(`Seja muito bem vindo, ${nome}!`);
+
+
+        
+
+
+
+       document.getElementById("titulo").addEventListener("click", function() {
+       document.getElementById("som").play();
+    });
+    </script>
+</body>
+</html>
