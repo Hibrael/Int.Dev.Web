@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <h1>Possíveis resultados: </h1>
+    <script>
+        let n1, soma, subtracao, divisao, multi; 
+        let n2;
+        n1 = Number.parseFloat(prompt("Digite o primeiro número a ser calculado:"));
+        n2 = Number.parseFloat(prompt("Digite o segundo número a ser calculado"));
+
+        soma = n1 + n2;
+        subtracao = n1 - n2;
+        divisao = n1 / n2;
+        multi = n1 * n2;
+
+        multi = multi.toFixed(2);
+        divisao = divisao.toFixed(2);
+
+        document.write(`Números inseridos: ${n1}, ${n2}. <br>`);
+        
+        document.write(`\n${n1} + ${n2} = ${soma} <br>`);
+
+        document.write(`\n${n1} - ${n2} = ${subtracao} <br>`);
+
+        document.write(`\n${n1} / ${n2} = ${divisao} <br>`);
+
+        document.write(`\n${n1} X ${n2} = ${multi} <br>`);
+
+
+    </script>
+    
+
+</body>
+</html>
