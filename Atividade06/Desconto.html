@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de desconto</title>
+</head>
+<body>
+    <h1>Preço final / Desconto</h1>
+
+    <script>
+        let valor1;
+        let porcentagem;
+        let desconto;
+        valor1 = Number.parseFloat(prompt("Digite o valor inicial do produto: "));
+        porcentagem = Number.parseFloat(prompt("Digite a porcentagem do desconto a ser aplicado (sem o símbolo '%')"))
+
+        desconto = valor1 * (porcentagem/100);
+       let valor2 = valor1 - desconto;
+
+        document.write(`Porcentagem do desconto aplicado: ${porcentagem}% <br>`);
+        document.write(`O valor do desconto é de R$: ${desconto.toFixed(2)} <br> O valor final é R$: ${valor2.toFixed(2)}`);
+
+    </script>
+</body>
+</html>
