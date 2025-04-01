@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversao de dolar para real</title>
+</head>
+<body>
+            <h1>Dólar > Real</h1>
+            <script>
+                let cotacaodolar, dolar, real;
+                cotacaodolar = 5.706;
+                dolar = parseFloat(prompt("Digite o valor em dólares para conversão: "));
+                real = dolar * cotacaodolar;
+                
+                document.write(`Cotação utilizada (31/03/2025): ${cotacaodolar} <br>`);
+                document.write(`US$${dolar} dólares, correspondem a R$${real.toFixed(2)} reais`);
+
+            </script>
+</body>
+</html>
