@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="nr1" id="nr1">
+    + 
+    <input type="number" name="nr2" id="nr2">
+    <input type="button" value="Soma" id="btn">
+
+    <div id="res">Resultado</div>
+
+    <script>
+        let bt = document.querySelector("#btn");
+        let resultado = document.querySelector("#res");
+        bt.addEventListener("click", somar);
+
+        function somar(){
+            
+            let n1 = Number(document.querySelector("#nr1").value);
+            let n2 = Number(document.querySelector("#nr2").value);
+            let soma = n1 + n2;
+            resultado.innerText = `A soma entre ${n1} + ${n2} é ${soma}`;
+
+        }
+    </script>
+</body>
+</html>
