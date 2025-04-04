@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hibrael</title>
 </head>
-<body>
-    <h1>Personalização de página</h1>
+<style>
+    #area{
+        background-color: rgba(65, 63, 63, 0.801); 
+        color:red;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+</style>
+<body id="all">
+    
+    <div id="area">
+        <h1>Personalização de página</h1>
+    </div>
     <input type="button" value="Mudar cor de fundo" id="btn">
+
+
     <script>
-        bt.addEventListener("click", mudarcordefundo())
+        let a = document.querySelector("#btn");
+        a.addEventListener("click", mudarcor);
 
-
-        function mudarcordefundo(){
-            
+        function mudarcor(){
+            let cor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+        document.body.style.background= cor;
         }
+    
     </script>
 </body>
 </html>
