@@ -6,6 +6,10 @@
     <title>Hibrael</title>
 </head>
 <style>
+     html, body {
+            height: 100%;
+            margin: 0; 
+     }
     #area{
         background-color: rgba(65, 63, 63, 0.801); 
         color:rgba(141, 0, 0, 0.877);
@@ -28,7 +32,7 @@
         margin-top: 10px;
         margin-left:5px;
         height: 40px;
-        width: 250px;
+        width: 65%;
         color: rgb(0, 0, 0);
         background-color: rgba(255, 255, 255, 0.575);
         box-shadow: 5px 5px 5px rgb(0, 0, 0);
@@ -58,7 +62,8 @@
         <h2 id="hh2">Digite algo: </h2>
         <input type="text" id="textbox">
 
-        <input type="button" value="Enviar" class="imprimir">
+        <input type="button" value="Enviar" class="imprimir" id="Enviar">
+        <p id="resultado">TEXTO AQUI</p>
     </div>
    
 
@@ -67,9 +72,19 @@
         let a = document.querySelector("#btn");
         a.addEventListener("click", mudarcor);
 
+        let impr = document.querySelector("#Enviar")
+        impr.addEventListener("click", imprima)
+        
+
         function mudarcor(){
             let cor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
         document.body.style.background= cor;
+        }
+
+        function imprima(){
+            let text = document.querySelector("#textbox").value;
+            document.getElementById("resultado").innerText = text;
+            
         }
     
     </script>
