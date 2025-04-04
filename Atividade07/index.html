@@ -8,18 +8,59 @@
 <style>
     #area{
         background-color: rgba(65, 63, 63, 0.801); 
-        color:red;
+        color:rgba(141, 0, 0, 0.877);
         width: 100%;
-        height: 100%;
+        height: 50px;
         text-align: center;
     }
+    input{
+        background-color: black;
+        color: white;
+    }
+    #divtext{
+        margin-top: 50px;
+        max-width: 27%;
+        height: 140px;
+        background-color: rgb(60, 77, 77);
+    }
+    #textbox{
+        display: block;
+        margin-top: 10px;
+        margin-left:5px;
+        height: 40px;
+        width: 250px;
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.575);
+        box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    }
+    #hh2{
+        margin-left:5px;
+    }
+    .imprimir{
+        margin-top: 5px;
+        display: flex;
+        height: 25px;
+        width: 70px;
+        margin-left:5px;
+    }
 </style>
+
+
 <body id="all">
     
-    <div id="area">
+    <nav id="area">
         <h1>Personalização de página</h1>
+        <input type="button" value="Mudar cor de fundo" id="btn">
+    </nav>
+
+
+    <div id="divtext">
+        <h2 id="hh2">Digite algo: </h2>
+        <input type="text" id="textbox">
+
+        <input type="button" value="Enviar" class="imprimir">
     </div>
-    <input type="button" value="Mudar cor de fundo" id="btn">
+   
 
 
     <script>
