@@ -10,7 +10,7 @@
     
     <!-- Navbar -->
     <nav id="area">
-        <h1>Personalização de página</h1>
+        <h1 id="h1master">Personalização de página</h1>
         <input type="button" value="Mudar cor de fundo" id="btn">
     </nav>
 
@@ -31,11 +31,38 @@
             <h2 id="hh2">Contador</h2>
             <input type="button" value="+"  class="contador" id="mais">
             <input type="button" value="-" class="contador" id="menos">
-            <p id="resultado">0</p>
+            <p id="contador">0</p>
+        </div>
+        <!-- DIV COR AUTOMATICA -->
+        <div id="mudarcor">
+            <h3 id="">Digite a cor que gostaria para o fundo da página:</h3>
+            <input type="button" value="Mudar Cor" id="send">
+            <input type="text" name="Cor" id="corusuario">
+        </div>
+
+
+        <div class="form-container">
+            <form>
+                <h2><strong>Formulário</strong></h2>
+                <br> <br>
+                
+                <label>Nome: </label>
+                <input type="text">
+                <br> <br>
+
+                <label>E-mail: </label>
+                <input type="text">
+                <br> <br>
+
+                <label>Digite uma mensagem: </label>
+                <textarea class="textarea"></textarea>
+
+                <input type="button" class="button" value="Enviar">
+            </form>
         </div>
        
     </div>
 
-    <script src="./JS.js"></script>
+     <script src="./JS.js"></script>
 </body>
 </html>

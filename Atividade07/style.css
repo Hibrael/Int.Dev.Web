@@ -1,7 +1,21 @@
 html, body {
     height: 100%;
     margin: 0; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+
+.container{
+    display: flex;
+    gap: 50px; /* Espaço entre as divs */
+}
+#hh2{
+    margin-top: auto;
+    margin-left:5px;
+    }
+    
 #area{
 background-color: rgba(65, 63, 63, 0.801); 
 color:rgba(141, 0, 0, 0.877);
@@ -13,18 +27,12 @@ input{
 background-color: black;
 color: white;
 }
+
+/* DIV TEXT */
 #divtext{
 margin-top: 50px;
 max-width: 20%;
 height: 40%;
-background-color: rgb(60, 77, 77);
-overflow: auto; 
-}
-
-#divsoma{
-margin-top: 50px;
-max-width: 20%;
-height: 20%;
 background-color: rgb(60, 77, 77);
 overflow: auto; 
 }
@@ -37,15 +45,73 @@ width: 65%;
 color: rgb(0, 0, 0);
 background-color: rgba(255, 255, 255, 0.575);
 box-shadow: 5px 5px 5px rgb(0, 0, 0);
-
-}
-#hh2{
-margin-left:5px;
 }
 .imprimir{
-margin-top: 5px;
-display: flex;
-height: 25px;
-width: 70px;
-margin-left:5px;
+    margin-top: 5px;
+    display: flex;
+    height: 25px;
+    width: 70px;
+    margin-left:5px;
+}
+
+/* DIV SOMA */
+#divsoma{
+    margin-top: 50px;
+    max-width: 20%;
+    height: 40%;
+    background-color: rgb(60, 77, 77);
+    overflow: auto; 
+    }
+.contador{
+    height: 35px;
+    width: 65px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(163, 13, 13, 0.445);
+}
+.contador:hover{
+    max-width: 100%;
+    max-height: 100%;
+    height: 35px;
+    width: 65px;
+    font-size: 25px;
+    color: rgb(252, 10, 10);
+    background-color: rgba(163, 13, 13, 0.555);
+    filter: brightness(2);
+}
+#contador{
+    font-size: 45px;
+    position: relative;
+}
+
+/* DIV MUDAR COR */
+#mudarcor{
+    margin-top: 50px;
+    max-width: 30%;
+    height: 20%;
+    background-color: rgb(60, 77, 77);
+    overflow: auto; 
+}
+#send{
+    margin-left: 5px;
+    width: 120px;
+    height: 35px;
+    font-size: 20px;
+    background-color: brown;
+}
+#send:hover{
+    margin-left: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    background-color: brown;
+    filter: brightness(2);
+}
+
+.form-container{
+    margin-top: 50px;
+    max-width: 20%;
+    height: 40%;
+    background-color: rgb(60, 77, 77);
+    overflow: auto; 
 }
