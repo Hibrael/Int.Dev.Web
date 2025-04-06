@@ -13,6 +13,9 @@ dm.addEventListener("click", subtrair)
 let alterarcor = document.querySelector("#send")
 alterarcor.addEventListener("click", cor)
 
+let formulario = document.querySelector("#enviar")
+formulario.addEventListener("click", send)
+
 
 
 function mudarcor(){
@@ -25,7 +28,10 @@ document.getElementById("h1master").style.color = cor1
 
 function imprima(){
     let text = document.querySelector("#textbox").value;
-    document.getElementById("resultado").innerText = text;
+    let novo = document.createElement("p");
+    novo.innerText = text;
+    document.getElementById("resultado").appendChild(novo);
+    // document.getElementById("resultado").innerText = text;
     
 }
 
@@ -46,4 +52,16 @@ function subtrair(){
 function cor(){
     let corusuario = document.querySelector("#corusuario").value;
     document.body.style.backgroundColor = corusuario;
+}
+
+function send(){
+    let name = document.querySelector("#namebox").value;
+    document.getElementById("name").innerText = name;
+
+    let email = document.querySelector("#emailbox").value;
+    document.getElementById("E-mail").innerText = email;
+
+    let msg = document.querySelector("#msgbox").value;
+    document.getElementById("mesage").innerText = msg;
+
 }
