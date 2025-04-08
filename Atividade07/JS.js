@@ -56,12 +56,12 @@ function cor(){
 
 function send(){
     let name = document.querySelector("#namebox").value;
-    document.getElementById("name").innerText = name;
+    document.getElementById("name").innerText = "Nome: " + name;
 
     let email = document.querySelector("#emailbox").value;
-    document.getElementById("E-mail").innerText = email;
+    document.getElementById("E-mail").innerText = "E-mail: " + email;
 
     let msg = document.querySelector("#msgbox").value;
-    document.getElementById("mesage").innerText = msg;
+    document.getElementById("mesage").innerText = "Mensagem: " + msg;
 
 }

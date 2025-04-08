@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hibrael</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body id="all">
-    
-    <!-- Navbar -->
-    <nav id="area">
-        <h1 id="h1master">Personalização de página</h1>
-        <input type="button" value="Mudar cor de fundo" id="btn">
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hibrael</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <div class="container"> 
+    <body>
+        <!-- Navbar -->
+        <nav id="area">
+            <h1 id="h1master">Personalização de página</h1>
+        </nav>
 
+        <div class="container">
+            <div class="conteudo">
+                <input type="button" value="Mudar cor de fundo" id="btn">
+                <!-- DIV TEXT -->
+                <div class="divs">
+                    <h2 id="hh2">Digite algo: </h2>
+                    <input type="text" id="textbox">
 
-         <!-- DIV TEXT -->
-        <div id="divtext">
-            <h2 id="hh2">Digite algo: </h2>
-            <input type="text" id="textbox">
-    
-            <input type="button" value="Enviar" class="imprimir" id="Enviar">
-            <p id="resultado"></p>
+                    <input type="button" value="Enviar" 
+                        id="Enviar"> <br>
+                    <p id="resultado"></p>
+                </div>
+
+                <!-- DIV CONTADOR -->
+                <div class="divs">
+                    <h2 id="hh2">Contador</h2>
+                    <input type="button" value="-" class="contador" id="menos">
+                    <input type="button" value="+" class="contador" id="mais">
+                    <p id="contador">0</p>
+                </div>
+                <!-- DIV COR AUTOMATICA -->
+                <div class="divs">
+                    <h3 id>Digite a cor que gostaria para o fundo da página:
+                    </h3>
+                    <label for>(ex: red ou #ff0000) </label> <br>
+                    <input type="text" name="Cor" id="corusuario">
+                    <input type="button" value="Mudar Cor" id="send">
+                </div>
+
+                <div class="form-container">
+                    <form class="form">
+                        <h2><strong>Formulário</strong></h2>
+                        <br>
+                        <label>Nome: </label>
+                        <input type="text" class="cxtx" id="namebox">
+                        <br> <br>
+
+                        <label>E-mail: </label>
+                        <input type="text" class="cxtx" id="emailbox">
+                        <br> <br>
+
+                        <label>Digite uma mensagem: </label>
+                        <textarea class="textarea" id="msgbox"></textarea>
+
+                        <input type="button" value="Enviar"
+                            id="enviar">
+
+                        <p id="name"></p>
+                        <p id="E-mail"></p>
+                        <p id="mesage"></p>
+                    </form>
+                </div>
+
+            </div>
         </div>
 
-        <!-- DIV CONTADOR -->
-        <div id="divsoma">
-            <h2 id="hh2">Contador</h2>
-            <input type="button" value="-" class="contador" id="menos">
-            <input type="button" value="+"  class="contador" id="mais">
-            <p id="contador">0</p>
-        </div>
-        <!-- DIV COR AUTOMATICA -->
-        <div id="mudarcor">
-            <h3 id="">Digite a cor que gostaria para o fundo da página: </h3>
-            <label for="">(ex: red ou #ff0000) </label> <br>
-            <input type="text" name="Cor" id="corusuario">
-            <input type="button" value="Mudar Cor" id="send">
-        </div>
-
-
-        <div class="form-container">
-            <form>
-                <h2><strong>Formulário</strong></h2>
-                <br> 
-                <label>Nome: </label>
-                <input type="text" class="cxtx" id="namebox">
-                <br> <br>
-
-                <label>E-mail: </label>
-                <input type="text" class="cxtx" id="emailbox">
-                <br> <br>
-
-                <label>Digite uma mensagem: </label>
-                <textarea class="textarea" id="msgbox"></textarea>
-
-                <input type="button" class="button" value="Enviar" id="enviar">
-
-                <p id="name">name</p>
-                <p id="E-mail">E-mail</p>
-                <p id="mesage">mesage</p>
-            </form>
-        </div>
-       
-    </div>
-
-     <script src="./JS.js"></script>
-</body>
+        <script src="./JS.js"></script>
+    </body>
 </html>
