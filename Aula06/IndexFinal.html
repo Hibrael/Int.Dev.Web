@@ -19,6 +19,8 @@
             <h2>Array e For</h2>
             <input type="text" id="nomeLista" placeholder="Adicionar nome à lista">
             <button id="btAdicionarNome">Adicionar</button>
+            <button id="btRemoverNome">Excluir</button>
+            <button id="btDeletarNomes">Deletar</button>
             <ul id="listaNomes"></ul>
         </section>
 
@@ -26,6 +28,8 @@
         
             // Eventos de "Escuta"
             document.getElementById('btAdicionarNome').addEventListener('click', adicionarNome);
+            document.getElementById('btRemoverNome').addEventListener('click', apagarNome);
+            document.getElementById('btDeletarNomes').addEventListener('click', deletarNome);
             
             let nomes = [];
 
@@ -37,9 +41,20 @@
                     document.getElementById('nomeLista').value=  "";
                     atualizarNomes();
                 }
-
+          
             }
 
+            function apagarNome(){
+                nomes.pop();
+                document.getElementById('nomeLista').value=  "";
+                atualizarNomes();
+                
+            }
+
+            function deletarNome(){
+                nomes.length = 0;
+                atualizarNomes();
+            }
             function atualizarNomes(){
                 let ul = document.getElementById('listaNomes');
                 ul.innerHTML = "";
