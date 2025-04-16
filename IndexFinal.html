@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções, Arrays e Loops</title>
+</head>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f0f0f0; }
+    section { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { color: #333; }
+    input, button { margin: 5px 0; padding: 8px; font-size: 14px; }
+    ul { list-style-type: none; padding-left: 0; }
+</style>
+<body>
+        <h1>JavaScript Interativo</h1>
+
+        <section>
+            <h2>Array e For</h2>
+            <input type="text" id="nomeLista" placeholder="Adicionar nome à lista">
+            <button id="btAdicionarNome">Adicionar</button>
+            <ul id="listaNomes"></ul>
+        </section>
+
+        <script>
+        
+            // Eventos de "Escuta"
+            document.getElementById('btAdicionarNome').addEventListener('click', adicionarNome);
+            
+            let nomes = [];
+
+            function adicionarNome(){
+                let nome = document.getElementById('nomeLista').value;
+                if (nome){
+
+                    nomes.push(nome);
+                    document.getElementById('nomeLista').value=  "";
+                    atualizarNomes();
+                }
+
+            }
+
+            function atualizarNomes(){
+                let ul = document.getElementById('listaNomes');
+                ul.innerHTML = "";
+
+                nomes.forEach((n, i) => {
+                    let li = document.createElement('li');
+                    li.innerText = `${i + 1}. ${n}`;
+                    ul.appendChild(li);
+                })
+            }
+
+        </script>
+</body>
+</html>
