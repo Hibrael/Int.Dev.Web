@@ -2,12 +2,19 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #bbbbbbd3;
     text-align: center;
+    min-height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 .container{
+    width: 90%;
     max-width: 400px;
     margin: 50px auto;
     background-color: rgb(160, 36, 36);
-    padding: 20px;
+    padding: 30px;
     border-radius: 7px;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.863);
 }
@@ -15,26 +22,47 @@ body{
 h1{
     margin-bottom: 15px;
 }
-
+#toggle-theme img {
+    margin-bottom: 30px; 
+}
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    align-items: center;
+}
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
 img{
     width: 40px;
 }
 .input-container{
     display: flex;
     gap: 10px;
+    margin: 20px 0;
+    align-items: center;
 }
 #task-input{
     flex: 1;
     padding: 8px;
 }
-button{
-    padding: 8px;
+button {
     cursor: pointer;
     background-color: transparent;
     border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-button:hover{
-    filter: brightness(5);
+button:hover {
+    color: #cecece;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #e2cd0a, 0 0 20px #130500;
+    transform: scale(1.05);
 }
 .filters{
     display: flex;
@@ -68,4 +96,35 @@ li{
 
 .dark-mode{
     background-color: #333;
+}
+.img{
+
+}
+body.light-mode .edit img {
+    content: url("/Aula07/assets/lapis-dark.png");
+}
+
+body.light-mode .delete img {
+    content: url("/Aula07/assets/lata-de-lixo-dark.png");
+}
+body.dark-mode .edit img {
+    content: url("/Aula07/assets/lapis-light.png");
+}
+
+body.dark-mode .delete img {
+    content: url("/Aula07/assets/lata-de-lixo-light.png");
+}
+button.edit,
+button.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+button.edit img,
+button.delete img {
+    width: 18px;  
+    height: 18px;
 }
