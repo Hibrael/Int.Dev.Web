@@ -13,18 +13,31 @@
             <nav>
                 <ul>
                     <li>Home</li>
-                    <li>Produtos</li>
+                    <li>Productos</li>
                     <li>Sobre</li>
                     <li>Contato</li>
                     <li>Conta</li>
                 </ul>
             </nav>
             <div class="nav-icon-container">
-                <img src="images/cart.png">
+                <!-- <img src="images/cart.png" class="cart-icon"> -->
+                 <div class="cart-icon">
+                    <img src="images/cart.png" alt="Carrinho">
+                    <span class="cart-count">0</span>
+                 </div>
                 <img src="images/menu.png" class="menu-button">
             </div>
         </div>
     </div>
+    
+        <!--Carrinho-->
+        <div id="cart-container" class="cart-container hidden">
+        <h2>Seu Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: 0 BRL</p>
+        <button id="close-cart">Fechar Carrinho</button>
+        </div>
+        <!--Carrinho-->
 
     <header>
         <div class="header-inner-content">
@@ -46,9 +59,9 @@
         <div class="gray-background">
             <div class="page-inner-content">
                 <div class="cols cols-3">
-                    <img src="images/products/product-1.png">
-                    <img src="images/products/product-2.png">
-                    <img src="images/products/product-3.png">
+                    <img src="images/products/product-1.png"> <!--imagem dos três notebooks -->
+                    <img src="images/products/product-2.png"> <!--imagem dos três notebooks -->
+                    <img src="images/products/product-3.png"> <!--imagem dos três notebooks -->
                     
                 </div>
 
@@ -58,98 +71,103 @@
             
         </div>
         <div>
+            <!--Inicio do catálogo dos itens -->
             <div class="page-inner-content">
-                <h3 class="section-title">Produtos Selecionados</h3>
+                <h3 class="section-title">Productos Selecionados</h3>
                 <div class="subtitle-underline"></div>
                 <div class="cols cols-4">
                     <div class="product">
                         <img src="images/products/product-4.png">
-                        <p class="produt-name">Combo gamer meation</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
-                        <p class="product-price">192,74 <span>BRL</span></p>
+                        <p class="product-name">Combo gamer meation</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
+                        <p class="product-price">249,90 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-5.png">
-                        <p class="produt-name">Placa de vídeo Nvidia MSI Ventus XS GeForce GTX 16 Series GTX 1650 OC Edition 4GB</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
+                        <p class="product-name">Placa de vídeo Nvidia MSI Ventus XS GeForce GTX 16 Series GTX 1650 OC Edition 4GB</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
                         <p class="product-price">2.029,99 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-6.png">
-                        <p class="produt-name">Controle Playstation 5 sem fio Dualsense Ps5 cor branco</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
+                        <p class="product-name">Controle Playstation 5 sem fio Dualsense Ps5 cor branco</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
                         <p class="product-price">442,00 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-7.png">
-                        <p class="produt-name">Cadeira de escritório Pelegrin PEL-3012 gamer ergonômica preta e vermelha com estofado de couro p.u.</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
-                        <p class="product-price">797,72 <span>BRL</span></p>
+                        <p class="product-name">Cadeira de escritório Pelegrin PEL-3012 gamer ergonômica preta e vermelha com estofado de couro p.u.</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
+                        <p class="product-price">1.099,00 <span>BRL</span></p>
                     </div>
 
                 </div>
             </div>
 
                         <div class="page-inner-content">
-                <h3 class="section-title">Últimos produtos</h3>
+                <h3 class="section-title">Últimos productos</h3>
                 <div class="subtitle-underline"></div>
                 <div class="cols cols-4">
                     <div class="product">
                         <img src="images/products/product-8.png">
-                        <p class="produt-name">Iphone 14 Pro Max 512GB</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
-                        <p class="product-price">192,74 <span>BRL</span></p>
+                        <p class="product-name">Iphone 14 Pro Max 512GB</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
+                        <p class="product-price">8.499,00 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-9.png">
-                        <p class="produt-name">Samsung Galaxy S23 Ultra 1TB</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
-                        <p class="product-price">2.029,99 <span>BRL</span></p>
+                        <p class="product-name">Samsung Galaxy S23 Ultra 1TB</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
+                        <p class="product-price">7.999,00 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-10.png">
-                        <p class="produt-name">Asus Rog Phone 3 Gamer</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
-                        <p class="product-price">442,00 <span>BRL</span></p>
+                        <p class="product-name">Asus Rog Phone 3 Gamer</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
+                        <p class="product-price">5.599,00 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-11.png">
-                        <p class="produt-name">Xiaomi 13 ultra</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
-                        <p class="product-price">797,72 <span>BRL</span></p>
+                        <p class="product-name">Xiaomi 13 ultra</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
+                        <p class="product-price">6.799,00 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-12.png">
-                        <p class="produt-name">Xbox Series X</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
-                        <p class="product-price">192,74 <span>BRL</span></p>
+                        <p class="product-name">Xbox Series X</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
+                        <p class="product-price">4.299,00 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-13.png">
-                        <p class="produt-name">Racingwheel GT480 Ferrari</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
+                        <p class="product-name">Racingwheel GT480 Ferrari</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
                         <p class="product-price">2.029,99 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-14.png">
-                        <p class="produt-name">PlayStation 5 </p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
-                        <p class="product-price">442,00 <span>BRL</span></p>
+                        <p class="product-name">PlayStation 5 </p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
+                        <p class="product-price">4.499,00 <span>BRL</span></p>
                     </div>
                     <div class="product">
                         <img src="images/products/product-15.png">
-                        <p class="produt-name">Gaming Desktop RTX 3090 TI</p>
-                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada produto -->
-                        <p class="product-price">797,72 <span>BRL</span></p>
+                        <p class="product-name">Gaming Desktop RTX 3090 TI</p>
+                        <p class="rate">&#9733; &#9733; &#9733; &#9733;&#9734;</p> <!-- Classificação (em estrelas) de cada producto -->
+                        <p class="product-price">12.999,00 <span>BRL</span></p>
+                         <!--Fim do catálogo dos itens -->
                     </div>
 
                 </div>
             </div>
         </div>
+
+         <!--"Footer"-->
         <div class="gray-background">
              <div class="header-inner-content">
             <div class="header-bottom-side exclusive-container">
                 <div class="header-bottom-side-left"> 
+                     <!--Producto em destaque-->
                     <h2>Smart Band 4</h2>
                     <p>Tela AMOLED de 0.95" com cores vibrantes, sensor óptico de batimentos cardíacos em tempo real, monitoramento avançado de sono, contagem de passos e calorias. Resistência à água até 50 metros, conexão Bluetooth 5.0 e autonomia de até 20 dias com uma única carga.</p>
                     <button>Ver agora &#8594;</button>
@@ -157,22 +175,14 @@
                 <div class="header-bottom-side-right">
                     <img src="images/exclusive.png">
                 </div> 
+                 <!--Producto em destaque-->
             </div>
         </div>
+        <!--"Footer"-->
 
-            <div class="page-inner-content">
-
-            </div>
         </div>
      </main>
 
-    <script>
-        const navbar = documentquerySelector(".navbar");
-        const menuButton = document.querySelector(".menu-button");
-
-        menuButton.addEventListener('click', () => {
-            navbar.classList.toggle("show-menu")
-        });
-    </script>
+<script src="Script.js"></script>
 </body>
 </html>
