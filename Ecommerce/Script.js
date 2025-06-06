@@ -8,11 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const totalElement = document.getElementById("cart-total");
   const cartCountElement = document.querySelector(".cart-count");
   const cartIcon = document.querySelector(".cart-icon");
+  const closeCartButton = document.getElementById("close-cart");
 
   // Mostrar/ocultar carrinho
   cartIcon.addEventListener('click', () => {
     cartContainer.classList.toggle('hidden');
   });
+  closeCartButton.addEventListener("click", () => {
+  cartContainer.classList.add("hidden");
+});
 
   productList.forEach(product => {
     const imagem = product.querySelector("img");
