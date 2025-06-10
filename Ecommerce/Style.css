@@ -4,7 +4,10 @@
     margin: 0; 
     /*mudar para o modo escuro*/
 }
+html{
 
+    scroll-behavior: smooth;
+}
 body{
 
     font-family: 'arial';
@@ -361,6 +364,20 @@ main{
   user-select: none;
   margin-left: 8px;   
   font-weight: bold;
+}
+#finalizar {
+    margin-top: 1rem;
+    background: #12c30cb7;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#cart-total{
+    margin-top: 10px;
+
 }
 .product-image {
     cursor: pointer;
